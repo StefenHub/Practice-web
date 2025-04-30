@@ -1,0 +1,160 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      line-height: 1.6;
+      color: #1f2937;
+      background-color: #f9fafb;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 24px;
+      width: 100%;
+    }
+
+    header {
+      background-color: #ffffff;
+      padding: 24px 0;
+      margin-bottom: 24px;
+    }
+
+    main {
+      padding: 32px 0;
+    }
+
+    section {
+      margin-bottom: 32px;
+    }
+
+    h1 {
+      color: #dc2626;
+      text-align: center;
+      text-decoration: underline;
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    a {
+      color: #2563eb;
+      text-decoration: none;
+      transition: text-decoration 0.2s ease;
+    }
+
+    .icon {
+      font-weight: bold;
+      margin-right: 8px;
+      display: inline-block;
+      min-width: 20px;
+    }
+
+    .instruction {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 16px;
+      padding: 8px 0;
+    }
+
+    .remark {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 16px;
+    }
+
+    .instruction del {
+      background-color: #dc2626;
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+
+    .box {
+      width: 100%;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      margin: 24px 0;
+      background-color: #ffffff;
+    }
+
+    .box-item {
+      padding: 16px;
+      font-size: 20px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    .box-header {
+      text-align: center;
+      font-weight: 600;
+    }
+
+    .box-item.highlight {
+      background-color: #fef3c7;
+    }
+
+    .check {
+      padding: 12px;
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .check-icon {
+      color: #16a34a;
+      font-weight: bold;
+      margin-right: 8px;
+    }
+
+    .check.highlight {
+      background-color: #fef3c7;
+      border-radius: 6px;
+    }
+
+    .footer {
+      font-style: italic;
+      color: #4b5563;
+      border-top: 1px solid #d1d5db;
+      padding-top: 16px;
+      margin-top: 32px;
+    }
+
+    .sr-only {
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      border-width: 0;
+      overflow: hidden;
+      position: absolute;
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        padding: 0 16px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+
+      .box-item {
+        padding: 8px 16px;
+        font-size: 18px;
+      }
+
+      .instruction,
+      .remark {
+        flex-direction: column;
+      }
+
+      .icon {
+        margin-bottom: 4px;
+      }
+    }
